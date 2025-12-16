@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="jk.css">
+    <style>
+        .a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .b{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="a">
+<input id="email" placeholder="email" type="text">
+<input id="password" placeholder="password" type="password">
+        <button onclick="Signin()">Sign in</button>
+    </div>
+    <script>
+       function Signin() {
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+            let correct_password = "dd";
+            let correct_email="undrlz.enh@gmail.com";
+            if (password === correct_password) {
+                alert("pass zov");
+            } else {
+                alert("pass buruu bn");
+            }
+            if (email=== correct_email) {
+                alert("email zov");
+            } else {
+                alert(" email buruu bn");
+            }
+        }
+    </script>
+</body>
+</html>
